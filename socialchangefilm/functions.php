@@ -107,6 +107,8 @@ function socialchangefilm_scripts() {
 	wp_enqueue_script( 'socialchangefilm-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
     
     wp_enqueue_script( 'socialchangefilm-smoothscroll', get_template_directory_uri() . '/js/smoothscroll.js', array('jquery'), true );
+    
+    wp_enqueue_script( 'socialchangefilm-jquery.sticky', get_template_directory_uri() . '/js/jquery.sticky.js', array('jquery'), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

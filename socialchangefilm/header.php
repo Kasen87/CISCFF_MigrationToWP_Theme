@@ -20,6 +20,15 @@
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
+<!-- Script for sticky header -->
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".main-navigation").sticky({
+            topSpacing: 0,
+            getWidthFrom: '.site-branding'
+        });
+    });
+    </script>
     
 <?php wp_head(); ?>
 </head>
@@ -39,13 +48,18 @@
     <script>
     window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
     </script>
+
+    <script>
+  $('#site-navigation').on('sticky-start', function() { console.log("Started"); });
+  $('#site-navigation').on('sticky-end', function() { console.log("Ended"); });
+</script>
     
     
     
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'socialchangefilm' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="fbanner">
 		<div class="site-branding">
             <img src="http://localhost/wordpress/wp-content/uploads/2015/02/CISCFF_Logo.jpg"/>            
 
