@@ -47,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 1.0 Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: "Varela Round",arial,sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -91,6 +91,7 @@ template {
 
 a {
 	background-color: transparent;
+    text-decoration: none;
 }
 
 a:active,
@@ -535,7 +536,7 @@ a:active {
 .main-navigation li {
     color: #567;
     display: inline-block;
-    font-family: "gotham rounded",arial,sans-serif;
+    font-family: "Varela Round",arial,sans-serif;
     font-size: 100%;
     font-weight: 500;
     padding: 5px 20px;
@@ -930,6 +931,8 @@ object {
 
 }
 
+/* Nav & Header Section */
+
 .mainNavSpan {
     padding: 0;
     margin-bottom: 0;
@@ -951,21 +954,495 @@ object {
     margin-top: 6px;
 }
 
+/* Title Hero Image Section */
+
 .heroImage {
     width: 100%;
     padding-top: 90px;
     padding-bottom: 70px;
-    border: 1px solid red;
     background-image: url("http://localhost/wordpress/wp-content/uploads/2015/02/CISCFF_Img_-12.jpg");
     background-position: 50% 49%;
     background-size: cover;
 }
 
 .welcomeTitle {
-    border: 2px dashed green;
-    height: 450px;
+    height: 600px;
     width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
+    text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.45);
+    padding-top: 140px;
 }
+
+.subtitle {
+    font-size: 24.3px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "Arapey", georgia, serif;
+    position:relative;
+}
+
+.title {
+    text-shadow: 0 0 1px #999, 0 1px 2px rgba(0, 0, 0, 0.45);
+    font-size: 325%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.lineHead1 {
+    position:absolute;
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    left: 270px;
+    top: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.lineHead {
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    right: 270px;
+    top: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+/* Submission Section */
+
+.submissionBox {
+    width: 100%;
+    background-color: #eee;
+}
+
+.basicText {
+    position: relative;
+    width: 960px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.submitText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.basicText.submit > span {
+    background-color: #333;   
+}
+
+.basicText.submit > span.lineHead1 {
+    left: -20px;
+    top: 115px;
+}
+.basicText.submit > span.lineHead{
+    right: -20px;
+    top: 115px;
+}
+
+.basicText.submit > div.subtitle {
+    color: #7a8fa3;
+    font-size: 135%;
+    margin-bottom: 35px;
+    
+}
+
+.Withoutabox {
+    padding-bottom: 150px;
+}
+
+/* Schedule Section */
+
+.scheduleBox {
+    width: 100%;
+    height: 500px;
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2015/02/thread.jpg);
+}
+
+.scheduleText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.basicText.schedule > span {
+    background-color: #000;
+}
+
+.basicText.schedule > span.lineHead1 {
+    left: 225px;
+    top: 115px;
+}
+.basicText.schedule > span.lineHead{
+    right: 225px;
+    top: 115px;
+}
+
+.basicText.schedule > .subtitle {
+    padding-top: 20px;
+}
+
+/* What We Do Section */
+
+.whatWeDoBox {
+    width: 100%;
+    background-color: #fff;
+}
+
+.whatWeDoText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.basicText.whatWeDo > span {
+    background-color: #000;
+}
+
+.basicText.whatWeDo > span.lineHead1 {
+    left: 250px;
+    top: 115px;
+}
+.basicText.whatWeDo > span.lineHead{
+    right: 250px;
+    top: 115px;
+}
+
+.basicText.whatWeDo > .subtitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: #7a8fa3;
+}
+
+.textBox {
+    width: 480px;
+    height: 500px;
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    margin-top: -23px;
+}
+
+.textBox > p {
+    font-family: "Arial", sans-serif;
+    font-size: 0.90em;
+}
+
+.smallText {
+    font-size: 1.4em;
+}
+
+/* Who We Are Section */
+
+
+.staticWidth {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.whoWeAreBox {
+    width: 100%;
+    background-color: #fff;
+}
+
+.whoWeAreText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.basicText.whoWeAre > span {
+    background-color: #000;
+}
+
+.basicText.whoWeAre > span.lineHead1 {
+    left: 260px;
+    top: 115px;
+}
+.basicText.whoWeAre > span.lineHead{
+    right: 260px;
+    top: 115px;
+}
+
+.basicText.whoWeAre > .subtitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: #7a8fa3;
+}
+
+.teamContainer {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 400px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+.last {
+    left: 225px;
+}
+
+.imgTeam > img {
+    border-radius: 1000px;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.text3 {
+    font-size: 1em;
+    color: #5e9516;
+    margin-top: -20px;
+}
+
+.teamContainer > p {
+    font-family: arial, sans-serif;
+    line-height: 0px;
+    font-size: 15px;
+}
+
+.teamContainer > h4 {
+    font-family: arial, sans-serif;
+    font-size: 15px; 
+}
+
+.nameText {
+    font-size: 1.8em;
+    line-height: 30px;
+    color: #678;
+}
+
+.column2X {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+
+.column2X > span {
+    margin-left: 80px;
+    float: left;
+}
+
+/* Donation Section */
+
+.basicText.donate > span.lineHead1 {
+    left: 290px;
+    top: 115px;
+}
+.basicText.donate > span.lineHead{
+    right: 290px;
+    top: 115px;
+}
+
+.basicText.donate > .subtitle {
+    padding-top: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.donateText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.donateBox {
+    width: 100%;
+    height: 400px;
+    background-image: url("http://localhost/wordpress/wp-content/uploads/2015/03/bg1.jpg");
+    background-position: 49% 50%;
+    
+}
+
+.donateBtn {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Press Section */
+
+.pressBox {
+   background: #f8f8f8;
+}
+
+
+.basicText.press > span.lineHead1 {
+    left: 310px;
+    top: 115px;
+    background-color: #333;
+}
+.basicText.press > span.lineHead {
+    right: 310px;
+    top: 115px;
+    background-color: #333;
+}
+
+.basicText.press > .subtitle { 
+    padding-top: 5px;
+    font-size: 20px;
+    color: #7a8fa3;
+}
+
+.pressText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.pressIcons {
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.pressIcons > img {
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 35px;
+    margin-top: 35px;
+}
+
+
+/* Contact Us Section */
+
+.contactUsBox {
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+.basicText.contactUs > span.lineHead1 {
+    left: 250px;
+    top: 115px;
+    background-color: #333;
+}
+.basicText.contactUs > span.lineHead {
+    right: 250px;
+    top: 115px;
+    background-color: #333;
+}
+
+.basicText.contactUs > .subtitle { 
+    padding-top: 5px;
+    font-size: 20px;
+    color: #7a8fa3;
+}
+
+.contactUsText {
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#contactForm {
+    width: 460px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+form {
+    margin: 0 auto;
+    width: 459px;
+}
+
+input, textarea {
+   	width:439px;
+	height:37px;
+    margin-bottom: 5px;
+	background:#f7f7f7;
+	border:1px solid #dedede;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 439px;
+}
+
+textarea {
+    height: 175px;
+    min-height: 175px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+    
+ #submit {
+     width: 127px;
+     height: 38px;
+     background-color: #82cd1e;
+     border:none;
+     margin-top: 0px;
+     cursor: pointer;
+     color: #fff;
+     letter-spacing: 1px;
+     margin-bottom: 60px;
+ }
+
+#submit:hover {
+    background-color: #78be1c;
+}
+
+.site-footer {
+    height: 350px;
+    background-color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    color: #999;
+}
+
+.socialMedia > div {
+    float: left;
+    margin-left: 15px;
+}
+
+
+.twitter-share-button {
+    margin-right: -20px;
+}
+
+.socialMedia {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-plusone {
+
+}
+
+.fb-like {
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+#

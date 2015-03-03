@@ -12,9 +12,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'socialchangefilm' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'socialchangefilm' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'socialchangefilm' ), 'socialChangeFilm', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="socialMedia">
+                <div class="fb-like" data-href="https://www.facebook.com/CISCFF" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                <div><a class="twitter-share-button" href="https://twitter.com/share" data-via="twitterdev">Tweet</a></div>
+                <div class="g-plusone" data-size="medium"></div>
+            </div>
+			<br>
+			<p>&copy; Copyright 2015</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
