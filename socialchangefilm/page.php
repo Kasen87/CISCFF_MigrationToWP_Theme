@@ -37,7 +37,7 @@ get_header(); ?>
                         <div class="subtitle">We're looking forward to it</div>
                         
                         <div class="Withoutabox">
-                           <a href="https://www.withoutabox.com/03film/03t_fin/03t_fin_fest_01over.php?festview=1&festival_id=11484"><img src="http://localhost/wordpress/wp-content/uploads/2015/03/withoutABox.jpg"/></a>
+                           <a href="https://www.withoutabox.com/03film/03t_fin/03t_fin_fest_01over.php?festview=1&festival_id=11484"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/withoutABox.jpg"/></a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ get_header(); ?>
                     </div>
                     
                     <div class="column2X">
-                        <span><img src="http://localhost/wordpress/wp-content/uploads/2015/03/whatWeDo.jpg" height="187px" width="280px" /></span>
+                        <span><img src="<?php echo get_template_directory_uri(); ?>/images/logos/whatWeDo.jpg" height="187px" width="280px" /></span>
                         <div class="textBox">
                             <h1 class="nameText smallText">Friday, September 25, 2015 to Sunday, September 27, 2015</h1>
                             <p><b>Showplace ICON, located at 150 West Roosevelt Road, Chicago IL. 60605</b></p>
@@ -92,7 +92,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/emile.png" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/emile.png" />
                             </span>
                             <h1 class="nameText">Emile Cambry, Jr.</h1>
                             <h4 class="text3">Co-Founder, President</h4>
@@ -103,7 +103,7 @@ get_header(); ?>
                         <div class="teamContainer">
                             <span class="imgTeam">
 
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/toddBelcore.jpg" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/toddBelcore.jpg" />
 
                             </span>
                             <h1 class="nameText">Todd Belcore</h1>
@@ -114,7 +114,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                            <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/philJones.jpg" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/philJones.jpg" />
                             </span>
                             <h1 class="nameText">Phil Jones</h1>
                             <h4 class="text3">Co-Chair Film Selection Committee</h4>
@@ -123,7 +123,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/maxMargolis.jpg" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/maxMargolis.jpg" />
                             </span>
                              <h1 class="nameText">Max Margolis</h1>
                              <h4 class="text3">Co-Chair Film Selection Committee</h4>
@@ -132,7 +132,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/donaLe.png" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/donaLe.png" />
                             </span>
                             <h1 class="nameText">Dona Le</h1>
                             <h4 class="text3">Special Events Chair and Film Selection Committee Member</h4>
@@ -141,7 +141,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                              <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/christinaLewis.png" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/christinaLewis.png" />
                             </span> 
                             <h1 class="nameText">Christina Lewis</h1>
                             <h4 class="text3">Intern</h4>
@@ -150,7 +150,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/GabrielaPedroza.jpg" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/GabrielaPedroza.jpg" />
                             </span>
                             <h1 class="nameText">Gabriela Pedroza</h1>
                             <h4 class="text3">Intern</h4>
@@ -159,7 +159,7 @@ get_header(); ?>
                         
                         <div class="teamContainer">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/dianaArellano.jpg" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/dianaArellano.jpg" />
                             </span>
                             <h1 class="nameText">Diana Arellano</h1>
                             <h4 class="text3">Film Selection Committee</h4>
@@ -168,7 +168,7 @@ get_header(); ?>
                         
                         <div class="teamContainer last">
                             <span class="imgTeam">
-                                    <img src="http://localhost/wordpress/wp-content/uploads/2015/03/miguelBlancarte.png" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/team/miguelBlancarte.png" />
                             </span>
                             <h1 class="nameText">Miguel Blancarte, Jr.</h1>
                             <h4 class="text3">Film Selection Committee</h4>
@@ -189,7 +189,7 @@ get_header(); ?>
                     <div class="subtitle">We're a volunteer organization and every donation helps tremendously.</div>
                         
                     <div class="donateBtn">
-                        <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=NAfxRBSnvUo0X2AkHNvTysGR6W8qZWbV6VCbRsEytdKgtPJoywwQ7RhoYJ8&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c" target="_blank"><img src="http://localhost/wordpress/wp-content/uploads/2015/03/donateBtn.gif" /></a>
+                        <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=NAfxRBSnvUo0X2AkHNvTysGR6W8qZWbV6VCbRsEytdKgtPJoywwQ7RhoYJ8&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/donateBtn.gif" /></a>
                     </div>
                     </div>
                     
@@ -211,11 +211,11 @@ get_header(); ?>
                     
                                         
                     <div class="pressIcons">
-                        <img src="http://localhost/wordpress/wp-content/uploads/2015/03/crainsBus.jpg" />
-                        <a href="http://www.inc.com/welcome.html?destination=http://www.inc.com/coolest-college-start-ups-2012/abigail-tracy/kipsolutions-patrick-ip.html"><img src="http://localhost/wordpress/wp-content/uploads/2015/03/streetWise.jpg" /></a>
-                        <img src="http://localhost/wordpress/wp-content/uploads/2015/03/mensBook.jpg" />
-                        <img src="http://localhost/wordpress/wp-content/uploads/2015/03/redEye.jpg" />
-                        <img src="http://localhost/wordpress/wp-content/uploads/2015/03/indieWire.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/crainsBus.jpg" />
+                        <a href="http://www.inc.com/welcome.html?destination=http://www.inc.com/coolest-college-start-ups-2012/abigail-tracy/kipsolutions-patrick-ip.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/streetWise.jpg" /></a>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mensBook.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/redEye.jpg" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logos/indieWire.jpg" />
                     </div>
                 
                 </div>

@@ -1271,7 +1271,7 @@ object {
 .donateBox {
     width: 100%;
     height: 400px;
-    background-image: url("http://localhost/wordpress/wp-content/uploads/2015/03/bg1.jpg");
+    background-image: url('images/parallax/bg1.jpg');
     background-position: 49% 50%;
     
 }
@@ -1359,6 +1359,8 @@ object {
     color: #333;
 }
 
+/* Contact Form CSS */
+
 #contactForm {
     width: 460px;
     margin: 0 auto;
@@ -1415,6 +1417,8 @@ input:focus, textarea:focus {
     background-color: #78be1c;
 }
 
+/* Footer Section */
+
 .site-footer {
     height: 350px;
     background-color: #fff;
@@ -1439,13 +1443,8 @@ input:focus, textarea:focus {
     margin-right: auto;
 }
 
-.g-plusone {
-
-}
 
 .fb-like {
     margin-top: -4px;
     margin-left: -5px;
 }
-
-#

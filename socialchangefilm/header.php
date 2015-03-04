@@ -18,19 +18,12 @@
 <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
 <!-- Place this tag in your head or just before your close body tag. -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-<!-- Script for sticky header -->
-<script>
-    jQuery(document).ready(function() {
-        jQuery(".main-navigation").sticky({
-            topSpacing: 0,
-            getWidthFrom: '.site-branding'
-        });
-    });
-    </script>
-    
+
 <?php wp_head(); ?>
+    
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript" src="<?php get_template_directory_uri(); ?>/js/jquery.sticky.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -49,11 +42,6 @@
     window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
     </script>
 
-    <script>
-  $('#site-navigation').on('sticky-start', function() { console.log("Started"); });
-  $('#site-navigation').on('sticky-end', function() { console.log("Ended"); });
-</script>
-    
     
     
 <div id="page" class="hfeed site">
@@ -61,7 +49,7 @@
 
 	<header id="masthead" class="site-header" role="fbanner">
 		<div class="site-branding">
-            <img src="http://localhost/wordpress/wp-content/uploads/2015/02/CISCFF_Logo.jpg"/>            
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logos/CISCFF_Logo.jpg" />            
 
 		</div><!-- .site-branding -->
 
@@ -72,7 +60,7 @@
 		</nav><!-- #site-navigation -->
         <div class="powerButton">
             <a href="#" class="smoothScroll">
-                <img src="http://localhost/wordpress/wp-content/uploads/2015/02/CISCFF_Img_-1.png" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/power.png" />
             </a>
         </div>
 	</header><!-- #masthead -->
