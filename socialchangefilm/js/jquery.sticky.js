@@ -1,17 +1,8 @@
-// Sticky Plugin v1.0.0 for jQuery
-// =============
-// Author: Anthony Garand
-// Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
-// Improvements by Leonardo C. Daronco (daronco)
-// Created: 2/14/2011
-// Date: 2/12/2012
-// Website: http://labs.anthonygarand.com/sticky
-// Description: Makes an element on the page stick on the screen as you scroll
-//       It will only set the 'top' and 'position' of your element, you
-//       might need to adjust the width in some cases.
-
+//Basic Functionality for this theme. Utilizes Smooth Scrolling, Menu Hiding, and 
 
 ( function($) {
+    
+//Menu Function Shrinks or Grows Depending on location in document
     
 $(window).load(function(){
     if($(document).scrollTop() == 0)
@@ -35,7 +26,7 @@ $(window).scroll(function(){
         {
             $('#masthead').data('size','small');
             $('#masthead').stop().animate({
-                top:'-125px'
+                top:'-125px' //Modified for current header size. Change this if the header logo changes sizes.
             },400);
         }
     }
@@ -46,13 +37,36 @@ $(window).scroll(function(){
             $('#masthead').data('size','big');
             $('#masthead').stop().animate({
                 top:'0px'
-            },400);
+            }, 400);
         }  
     }
 });
 
-
-// Initialize all .smoothScroll links
-jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
+//Smooth Scrolling Section
+//Includes Scroll to Top Function --Relies on this.hash returning nothing (which happens if you set the id="#"
+//Long story short - If you want to scroll to the top with a button, give the anchor --> (href="#")
     
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+        
+	    e.preventDefault();
+        
+	    var target = this.hash;
+        
+        if( target ) {
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                //window.location.hash = target;  --This line shows the link at hover option at the bottom of browsers.
+            });
+        }
+        else {
+            $('html, body').stop().animate({
+                'scrollTop' : 0}, 900);
+        }
+	});
+});
+
 }) (jQuery);

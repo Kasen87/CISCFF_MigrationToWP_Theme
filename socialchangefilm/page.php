@@ -17,7 +17,7 @@ get_header(); ?>
             
             <?php if ( is_front_page() ) : ?>
                 <div class="heroImage">
-                    <div class="welcomeTitle">
+                    <div class="welcomeTitle lg-Container">
                         <div class="subtitle"><em>September 25th-27th, 2015</em></div>
                         <div class="subtitle">
                             <span class="lineHead1"></span>
@@ -29,7 +29,7 @@ get_header(); ?>
                 </div>
             
                 <div id="submissions" class="submissionBox">
-                    <div class="basicText submit">
+                    <div class="basicText submit lg-Container">
                         <span class="lineHead1"></span>
                             <div class="title submitText">Submit Your Film for the 2015 festival!</div>
                         <span class="lineHead"></span>
@@ -43,7 +43,7 @@ get_header(); ?>
                 </div>
             
                 <div id="schedule" class="scheduleBox">
-                    <div class="basicText schedule">
+                    <div class="basicText schedule lg-Container">
                     <span class="lineHead1"></span>
                             <div class="title scheduleText">2015 Schedule!</div>
                         <span class="lineHead"></span>
@@ -53,7 +53,7 @@ get_header(); ?>
                 </div>
             
                 <div id="whatWeDo" class="whatWeDoBox">
-                    <div class="basicText whatWeDo">
+                    <div class="basicText whatWeDo lg-Container">
                     <span class="lineHead1"></span>
                             <div class="title whatWeDoText">What We Do</div>
                         <span class="lineHead"></span>
@@ -82,9 +82,8 @@ get_header(); ?>
                 </div>
             
                 <div id="team" class="whoWeAreBox">
-                    <div class="staticWidth">
-                        
-                        <div class="basicText whoWeAre">
+                    <div class="lg-Container">
+                    <div class="basicText whoWeAre">
                         <span class="lineHead1"></span>
                                 <div class="title whoWeAreText">Who We Are</div>
                             <span class="lineHead"></span>
@@ -181,7 +180,7 @@ get_header(); ?>
                 </div>
             
                 <div id="donations" class="donateBox">
-                    <div class="basicText donate">
+                    <div class="basicText donate lg-Container">
                     <span class="lineHead1"></span>
                             <div class="title donateText">Donate</div>
                         <span class="lineHead"></span>
@@ -198,7 +197,7 @@ get_header(); ?>
                 </div>
             
                 <div id="press" class="pressBox">
-                    <div class="basicText press">
+                    <div class="basicText press lg-Container">
                     <span class="lineHead1"></span>
                             <div class="title pressText">Press</div>
                         <span class="lineHead"></span>
@@ -210,7 +209,7 @@ get_header(); ?>
                     </div>
                     
                                         
-                    <div class="pressIcons">
+                    <div class="pressIcons lg-Container">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/crainsBus.jpg" />
                         <a href="http://www.inc.com/welcome.html?destination=http://www.inc.com/coolest-college-start-ups-2012/abigail-tracy/kipsolutions-patrick-ip.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/streetWise.jpg" /></a>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logos/mensBook.jpg" />
@@ -221,7 +220,7 @@ get_header(); ?>
                 </div>
             
                 <div id="contact" class="contactUsBox">
-                    <div class="basicText contactUs">
+                    <div class="basicText contactUs lg-Container">
                     <span class="lineHead1"></span>
                             <div class="title contactUsText">Contact Us</div>
                         <span class="lineHead"></span>
@@ -229,11 +228,13 @@ get_header(); ?>
                         <div class="subtitle">We'll get back to you soon : &#41;</div>
                     </div>
                     
-                    <div id="contactForm">
-                        <form method="post" action="contactMe.php">
-                            <input name="name" placeholder="Name">
 
-                            <input name="email" type="email" placeholder="E-mail">
+                    
+                    <div id="contactForm">
+                        <form method="post" action="<?php echo get_template_directory_uri();?>/contactMe.php" enctype="multipart/form-data">
+                            <input name="name" placeholder="Name (required)">
+
+                            <input name="email" type="email" placeholder="E-mail (required)">
 
                             <textarea name="message" placeholder="Message"></textarea>
 

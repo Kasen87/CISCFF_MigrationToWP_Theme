@@ -1,19 +1,26 @@
 /*
-Theme Name: socialChangeFilm
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme Name: Chicago Social Film Change
+Theme URI: http://www.chicagosocialchange.org
+Author: Joshua R. Engel (Much Help from _'s Starter Theme @ http://underscores.me/ (C) 2012-2015 Automattic, Inc.)
+Author URI: www.github.com/kasen87
 Description: Description
-Version: 1.0.0
+Version: 0.9.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: socialchangefilm
+Text Domain: Chicago Social Film Change
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
-socialChangeFilm is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Chicago Social Film Change theme was created for a website migration project. The original website could not be accessed via code
+and the request was to enable the owner of the site to edit and add in sections as needed.
+
+Version History:
+--
+0.9.0
+--
+All the basic Functionality is there. The theme works as a wordpress "static" page. Plugins and hooks into wordpress haven't been
+full utilized yet, but that will come by version 1.0.0 most likely.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -900,13 +907,16 @@ object {
 
 
 
+
+
+/* Nav & Header Section */
+
 .site-branding > img {
     width: 255px;
     margin: 20px auto 10px;
     display: block;
     
 }
-
 
 .site-header {
     position: fixed;
@@ -916,29 +926,22 @@ object {
     box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
-
-
-@media screen and (min-width: 1250px) {
-    .site-branding {
-        position: relative;
-        width: 1140px;
-        margin: 0 auto;
-    }
-    
-    .main-navigation {
-        width: 1140px;
-        /*border: 1px red solid;*/
-        
-    }
-
-}
-
-/* Nav & Header Section */
-
 .mainNavSpan {
     padding: 0;
     margin-bottom: 0;
     text-align: center;
+}
+
+.site-branding {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+    
+.main-navigation {
+    width: 960px;
+    /*border: 1px red solid;*/
+
 }
 
 .powerButton {
@@ -960,7 +963,8 @@ object {
 
 .heroImage {
     width: 100%;
-    padding-top: 90px;
+    padding-top: 165px;
+    height: 90vh;
     padding-bottom: 70px;
     background-image: url("http://localhost/wordpress/wp-content/uploads/2015/02/CISCFF_Img_-12.jpg");
     background-position: 50% 49%;
@@ -970,12 +974,17 @@ object {
 
 .welcomeTitle {
     height: 600px;
-    width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.45);
     padding-top: 140px;
+    position: relative; /*To Position the the lines next to the text */
+}
+    
+.lg-Container {
+    width: 960px;
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -984,7 +993,6 @@ object {
     font-weight: 400;
     line-height: 1.2;
     font-family: "Arapey", georgia, serif;
-    position:relative;
 }
 
 .title {
@@ -1001,8 +1009,8 @@ object {
     height: 2px;
     width: 100px;
     background-color: #fff;
-    left: 270px;
-    top: 15px;
+    left: 175px;
+    top: 185px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
@@ -1012,8 +1020,8 @@ object {
     height: 2px;
     width: 100px;
     background-color: #fff;
-    right: 270px;
-    top: 15px;
+    right: 175px;
+    top: 185px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
@@ -1026,7 +1034,6 @@ object {
 
 .basicText {
     position: relative;
-    width: 960px;
     padding-top: 90px;
     padding-bottom: 70px;
     margin: 0 auto;
@@ -1150,10 +1157,6 @@ object {
 /* Who We Are Section */
 
 
-.staticWidth {
-    width: 960px;
-    margin: 0 auto;
-}
 
 
 .whoWeAreBox {
@@ -1314,9 +1317,7 @@ object {
 }
 
 .pressIcons {
-    width: 960px;
     text-align: center;
-    margin: 0 auto;
     padding-bottom: 90px;
 }
 
@@ -1420,7 +1421,7 @@ input:focus, textarea:focus {
 /* Footer Section */
 
 .site-footer {
-    height: 350px;
+    height: 300px;
     background-color: #fff;
     padding-top: 30px;
     text-align: center;
